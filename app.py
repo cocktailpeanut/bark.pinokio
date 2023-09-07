@@ -2,6 +2,7 @@ import gradio as gr
 from share_btn import community_icon_html, loading_icon_html, share_js
 import os 
 import shutil
+import torch
 
 #from huggingface_hub import snapshot_download
 import numpy as np
@@ -26,7 +27,7 @@ with open("characters.json", "r") as file:
     ]
     
 from TTS.api import TTS
-tts = TTS("tts_models/multilingual/multi-dataset/bark", gpu=False)
+tts = TTS("tts_models/multilingual/multi-dataset/bark", gpu=torch.cuda.is_available())
 
 def cut_wav(input_path, max_duration):
     # Load the WAV file
