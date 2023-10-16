@@ -1,4 +1,12 @@
 {
+  "requires": [{
+    "platform": "darwin",
+    "name": "brew"
+  }, {
+    "type": "brew",
+    "name": "mecab",
+    "args": "-c conda-forge"
+  }],
   "run": [
     {
       "method": "shell.run",
