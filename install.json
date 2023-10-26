@@ -3,6 +3,10 @@
     "platform": "darwin",
     "type": "brew",
     "name": "mecab"
+  }, {
+    "type": "conda",
+    "name": "ffmpeg",
+    "args": "-c conda-forge"
   }],
   "run": [
     {
