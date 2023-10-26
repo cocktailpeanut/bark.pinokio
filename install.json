@@ -1,9 +1,8 @@
 {
   "requires": [{
-    "platform": ["darwin", "linux"],
-    "type": "conda",
-    "name": "mecab",
-    "args": "-c anaconda"
+    "platform": "darwin",
+    "type": "brew",
+    "name": "mecab"
   }],
   "run": [
     {
