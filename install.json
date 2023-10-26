@@ -4,16 +4,9 @@
     "name": "brew"
   }, {
     "type": "brew",
-    "name": "mecab",
-    "args": "-c conda-forge"
+    "name": "mecab"
   }],
   "run": [
-    {
-      "method": "shell.run",
-      "params": {
-        "message": "{{os.platform() === 'win32' ? '' : 'brew install mecab'}}"
-      }
-    },
     {
       "method": "shell.run",
       "params": {
