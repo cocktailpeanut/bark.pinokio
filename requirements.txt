@@ -1,5 +1,5 @@
 git+https://github.com/cocktailpeanut/TTS.git
-git+https://github.com/huggingface/transformers.git
+transformers
 scipy
 pydub
 demucs
